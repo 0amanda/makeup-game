@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery.min.js"></script>
+    <script src="interact.min.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>makeup game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="face-canvas">
+        <div class="slideshow-container dropzone">
+          <div class="eye-slider" style="background-color: blueviolet"></div>
+
+          <div class="eye-slider" style="background-color: blue"></div>
+
+          <div class="eye-slider" style="background-color: brown"></div>
+
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <div class="slideshow-container dropzone">
+          <div
+            class="nose-cheek-slider"
+            style="background-color: blueviolet"
+          ></div>
+
+          <div class="nose-cheek-slider" style="background-color: blue"></div>
+
+          <div class="nose-cheek-slider" style="background-color: brown"></div>
+
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+
+        <div class="slideshow-container dropzone">
+          <div class="mouth-slider" style="background-color: blueviolet"></div>
+
+          <div class="mouth-slider" style="background-color: blue"></div>
+
+          <div class="mouth-slider" style="background-color: brown"></div>
+
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+      </div>
+      <div class="makeup-menu">
+        <div id="itemA" class="draggable itemA" style="background-color: black"></div>
+      </div>
+    </div>
+  </body>
+</html>
