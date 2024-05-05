@@ -1,10 +1,11 @@
 const itemAposition = { x: 0, y: 0 };
 
 let slideIndex = [1, 1, 1];
-let slideId = ["eye-slider", "nose-cheek-slider", "mouth-slider"];
+let slideId = ["hair-slider","eyeliner-slider", "eyelinerred-slider"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
+
 
 function plusSlides(n, no) {
   showSlides((slideIndex[no] += n), no);
@@ -22,27 +23,28 @@ function showSlides(n, no) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  x[slideIndex[no] - 1].style.display = "block";
+  x[slideIndex[no] - 1].style.display = "inline";
 }
 
 //itemA
-interact(".itemA").draggable({
+interact('.itemA').draggable({
   listeners: {
     start(event) {
       console.log(event.type, event.target);
     },
-    move(event) {
+    move (event) {
+      // Update he posittion of itemA
       itemAposition.x += event.dx;
       itemAposition.y += event.dy;
 
+      // Apply the transformation to move itemA
       event.target.style.transform = `translate(${itemAposition.x}px, ${itemAposition.y}px)`;
     },
     end(event) {
       console.log(event.type, event.target);
-    },
-  },
+    }
+  }
 });
-
 //dropzone
 
 interact(".dropzone").dropzone({
