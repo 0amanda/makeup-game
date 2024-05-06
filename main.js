@@ -1,4 +1,4 @@
-const itemAposition = { x: 0, y: 0 };
+const blackeyelinerposition = { x: 0, y: 0 };
 
 let slideIndex = [1, 1, 1];
 let slideId = ["hair-slider","eyeliner-slider", "eyelinerred-slider"];
@@ -26,25 +26,26 @@ function showSlides(n, no) {
   x[slideIndex[no] - 1].style.display = "inline";
 }
 
-//itemA
-interact('.itemA').draggable({
+//blackeyeliner
+interact('.blackeyeliner').draggable({
   listeners: {
     start(event) {
       console.log(event.type, event.target);
     },
     move (event) {
-      // Update he posittion of itemA
-      itemAposition.x += event.dx;
-      itemAposition.y += event.dy;
+      // Update he posittion of blackeyeliner
+      blackeyeliner.x += event.dx;
+      blackeyeliner.y += event.dy;
 
-      // Apply the transformation to move itemA
-      event.target.style.transform = `translate(${itemAposition.x}px, ${itemAposition.y}px)`;
+      // Apply the transformation to move blackeyeliner
+      event.target.style.transform = `translate(${blackeyeliner.x}px, ${blackeyeliner.y}px)`;
     },
     end(event) {
       console.log(event.type, event.target);
     }
   }
 });
+
 //dropzone
 
 interact(".dropzone").dropzone({

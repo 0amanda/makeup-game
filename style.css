@@ -1,6 +1,6 @@
 
 .container{
-  width: 100vw;
+  width: 100%vw;
 }
 
 /* Slideshow container */
@@ -19,8 +19,7 @@
 
 .face-canvas{
   position: relative;
-    margin-top: 140px;
-    margin-left: 50px;
+    margin-left: 1%;
     
 }
 
@@ -29,7 +28,7 @@
   cursor: pointer;
   position: absolute;
   width: auto;
- top: 10px;
+  top: 175px;
   padding: 16px;
   margin-top: -22px;
   color: black;
@@ -44,7 +43,7 @@
   cursor: pointer;
   position: absolute;
   width: auto;
- top: 10px;
+ top: 300px;
   padding: 16px;
   margin-top: -22px;
   color: black;
@@ -59,7 +58,7 @@
   cursor: pointer;
   position: absolute;
   width: auto;
- top: 20px;
+ top: 300px;
   padding: 16px;
   margin-top: -22px;
   color: black;
@@ -154,7 +153,7 @@ top: -50%;
     position: relative;
   }
 
-.itemA{
+.blackeyeliner{
     width: 50px;
     height: 50px;
     z-index: 1;
