@@ -13,30 +13,66 @@
   <body>
     <div class="container">
       <div class="face-canvas">
-        <div class="slideshow-container2 dropzone">
-          <div class="eyeliner-slider"><img src="eyeliner1.png" alt="" /></div>
+        <div class="slideshow-container2">
+          <div class="dropzone"></div>
 
-          <div class="eyeliner-slider"><img src="eyeliner3.png" alt="" /></div>
-          <div class="eyeliner-slider"><img src="eyeliner4.png" alt="" /></div>
+          <div id="blackeyelinerslider" style="display: none">
+            <div class="eyeliner-slider">
+              <img src="eyeliner1.png" alt="" />
+            </div>
 
-          <div class="eyeliner-slider"><img src="#" alt="" /></div>
+            <div class="eyeliner-slider">
+              <img src="eyeliner3.png" alt="" />
+            </div>
+            <div class="eyeliner-slider">
+              <img src="eyeliner4.png" alt="" />
+            </div>
 
-          <a class="prev linerprev" onclick="plusSlides(-1, 1)">&#10094;</a>
-          <a class="next linernext" onclick="plusSlides(1, 1)">&#10095;</a>
+            <div class="eyeliner-slider"><img src="#" alt="" /></div>
 
-          <div class="eyelinerred-slider"><img src="eyeliner5.png" alt="" /></div>
-          <div class="eyelinerred-slider"><img src="eyeliner6.png" alt="" /></div>
+            <a class="prev linerprev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next linernext" onclick="plusSlides(1, 1)">&#10095;</a>
+          </div>
 
-          <div class="eyelinerred-slider"><img src="#" alt="" /></div>
+          <div id="redeyelinerslider" style="display: none">
+            <div class="eyelinerred-slider">
+              <img src="eyeliner5.png" alt="" />
+            </div>
+            <div class="eyelinerred-slider">
+              <img src="eyeliner6.png" alt="" />
+            </div>
 
-          <a class="prev linerredprev" onclick="plusSlides(-1, 2)">&#10094;</a>
-          <a class="next linerrednext" onclick="plusSlides(1, 2)">&#10095;</a>
+            <div class="eyelinerred-slider"><img src="#" alt="" /></div>
 
+            <a class="prev linerredprev" onclick="plusSlides(-1, 2)"
+              >&#10094;</a
+            >
+            <a class="next linerrednext" onclick="plusSlides(1, 2)">&#10095;</a>
+          </div>
         </div>
 
-
-        <div class="slideshow-container dropzone">
+        <div class="slideshow-container">
           <img class="eyebrows" src="eyebrows1.png" alt="" />
+
+          <div class="dropzone2"></div>
+
+          <div class="lips">
+            <img
+              id="blacklipline"
+              src="lips1.png"
+              alt=""
+              style="display: none"
+            />
+            <img
+              id="redandblacklip"
+              src="lips2.png"
+              alt=""
+              style="display: none"
+            />
+            <img id="redlip" src="lips3.png" alt="" style="display: none" />
+            <img id="blacklip" src="lips4.png" alt="" style="display: none" />
+          </div>
+
           <img class="base" src="base.png" alt="" />
 
           <div class="hair-slider"><img src="hair1.png" alt="" /></div>
@@ -54,8 +90,45 @@
         <div
           id="blackeyeliner"
           class="draggable blackeyeliner"
-          style="background-color: red"
+          style="background-color: rgb(0, 0, 0)"
         ></div>
+
+        <div
+          id="redeyeliner"
+          class="draggable redeyeliner"
+          style="background-color: rgb(255, 0, 0)"
+        ></div>
+
+        <div
+          id="redlipstick"
+          class="draggable redlipstick lippie"
+          style="background-color: rgb(93, 0, 0)"
+        ></div>
+
+        <div
+          id="blacklipstick"
+          class="draggable blacklipstick lippie"
+          style="background-color: rgb(36, 36, 36)"
+        ></div>
+
+        <div
+          id="blacklipliner"
+          class="draggable blacklipliner lippie"
+          style="background-color: rgb(196, 196, 196)"
+        ></div>
+
+        <div
+          id="lipcombo"
+          class="draggable lipcombo lippie"
+          style="background-color: rgb(99, 65, 65)"
+        ></div>
+
+        <div
+        id="remover"
+        class="draggable remover"
+        style="background-color: rgb(235, 235, 235)"
+      ></div>
+
       </div>
     </div>
   </body>

@@ -13,6 +13,7 @@
 .slideshow-container2 {
   max-width: 700px;
   position: relative;
+ 
 
 }
 
@@ -120,6 +121,12 @@ transform: translateX(-50%);
 top: -50%;
 }
 
+
+
+.drop-active {
+  border-color: #aaa;
+}
+
 .base{
   position: absolute;
   z-index: -1;
@@ -138,6 +145,24 @@ top: -50%;
   transform: translateX(-50%);
 }
 
+.dropzone2{
+position: absolute;
+width: 150px;
+height: 75px;
+top: 410px;
+transform: translateX(-50%);
+left: 50%;
+}
+
+.lips img{
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  width: 500px;
+  top: -150%;
+  transform: translateX(-50%);
+}
+
 .makeup-menu{
     width: 300px;
     background-color: aquamarine;
@@ -146,16 +171,68 @@ top: -50%;
     left: 800px;
 }
 
-.draggable {
+.dropzone{
+  position: absolute;
+  height: 60px;
+  left: 50%;
+  width: 300px;
+  transform: translateX(-50%);
+  top: 285px;
+}
+
+.draggable{
     touch-action: none;
     user-select: none;
     cursor: move;
     position: relative;
+    z-index: 99999;
   }
 
 .blackeyeliner{
     width: 50px;
     height: 50px;
-    z-index: 1;
+    z-index: 3;
+
+}
+
+.redeyeliner{
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+
+}
+
+.redlipstick{
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+
+}
+
+.blacklipstick{
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+
+}
+
+.blacklipliner{
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+
+}
+
+.lipcombo{
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+
+}
+
+.remover{
+  width: 50px;
+  height: 50px;
+  z-index: 3;
 
 }
