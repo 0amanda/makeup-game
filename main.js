@@ -180,7 +180,7 @@ interact('.remover').draggable({
 interact(".dropzone").dropzone({
   accept: '.blackeyeliner, .redeyeliner, .remover',
     // Require a 75% element overlap for a drop to be possible
-    overlap: 0.75,
+    overlap: 0.10,
   ondrop: function (event) {
     console.log("Dropped into dropzone:");
  // Determine which element was dropped and show the corresponding result div
@@ -234,7 +234,7 @@ function resetZIndex() {
 interact(".dropzone2").dropzone({
   accept: '.lippie, .remover',
     // Require a 75% element overlap for a drop to be possible
-    overlap: 0.75,
+    overlap: 0.10,
   ondrop: function (event) {
     console.log("Dropped into dropzone:");
  // Determine which element was dropped and show the corresponding result div

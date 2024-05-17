@@ -164,10 +164,19 @@ left: 50%;
 }
 
 .makeup-menu{
-    width: 300px;
+    width: 400px;
     position: absolute;
     top: 50px;
     left: 800px;
+    display: flex;
+    gap:  55px;
+
+  }
+
+.product{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dropzone{
@@ -189,7 +198,7 @@ left: 50%;
 
 .blackeyeliner{
     width: 50px;
-    height: 50px;
+    height: 150px;
     z-index: 3;
 
 }
